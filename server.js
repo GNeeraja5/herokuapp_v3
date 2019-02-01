@@ -21,4 +21,4 @@ app.get('/:route', (req, res) => {
 
 //app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
-log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), router))
+server.listen(process.env.PORT || port);
